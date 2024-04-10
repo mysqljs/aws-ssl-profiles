@@ -34,4 +34,7 @@ jobs:
         run: npm ci
 
       - name: Building the Lib
-        run: npm run build
+        run: npm run build -- --noEmit
+
+      - name: Running Tests
+        run: npm run test
