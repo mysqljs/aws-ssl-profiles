@@ -1,2 +1,3 @@
-# aws-ssl-profiles
-AWS RDS certificates bundles
+# AWS SSL Profiles
+
+AWS RDS Certificates Bundles

@@ -1,0 +1,31 @@
+{
+  "name": "aws-ssl-profiles",
+  "description": "AWS RDS certificates bundles.",
+  "version": "0.1.0",
+  "license": "MIT",
+  "repository": "https://github.com/mysqljs/aws-ssl-profiles",
+  "devDependencies": {
+    "@types/node": "^20.12.7",
+    "@typescript-eslint/eslint-plugin": "^7.6.0",
+    "@typescript-eslint/parser": "^7.6.0",
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-import-resolver-typescript": "^3.6.1",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-prettier": "^5.1.3",
+    "prettier": "^3.2.5",
+    "tsx": "^4.7.2",
+    "typescript": "^5.4.4"
+  },
+  "files": [
+    "lib/"
+  ],
+  "engines": {
+    "node": ">= 6.0.0"
+  },
+  "scripts": {
+    "build": "npx tsc",
+    "lint": "eslint . --ext .js,.ts && prettier --check .",
+    "lint:fix": "eslint . --fix --config ./.eslintrc.json && prettier --write ."
+  }
+}
