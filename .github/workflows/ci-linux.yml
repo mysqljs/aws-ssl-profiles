@@ -1,0 +1,37 @@
+name: 'CI - Linux'
+on:
+  push:
+    branches:
+      - 'main'
+  pull_request:
+  workflow_dispatch:
+jobs:
+  node:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    strategy:
+      fail-fast: false
+      matrix:
+        node-version: [20.x]
+    name: Node.js ${{ matrix.node-version }}
+    steps:
+      - name: Actions - Checkout
+        uses: actions/checkout@v4
+
+      - name: Actions - Setup NodeJS
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - name: Cache dependencies
+        uses: actions/cache@v4
+        with:
+          path: ~/.npm
+          key: npm-linux-${{ hashFiles('package-lock.json') }}
+          restore-keys: npm-linux-
+
+      - name: Installing Dependencies
+        run: npm ci
+
+      - name: Building the Lib
+        run: npm run build
