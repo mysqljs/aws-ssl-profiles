@@ -2,7 +2,7 @@ import x509 from 'x509.js';
 import { describe, assert } from 'poku';
 import { defaults } from '../../src/profiles/ca/defaults.js';
 
-describe('Ensuring all certificates are valids and are from Amazon RDS', {
+describe('Ensuring all certificates are valid and parsable', {
   pad: true,
   background: false,
 });
