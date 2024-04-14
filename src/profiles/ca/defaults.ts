@@ -1,3 +1,5 @@
+import { CA } from '../../@types/profiles.js';
+
 /**
  * CA Certificates for **Amazon RDS** (2024)
  *
@@ -5,9 +7,6 @@
  * - https://docs.amazonaws.cn/en_us/AmazonRDS/latest/AuroraUserGuide/UsingWithRDS.SSL.html
  * - https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-serverless.html#aurora-serverless.tls
  */
-
-import { CA } from '../../@types/profiles.js';
-
 export const defaults: CA = [
   '-----BEGIN CERTIFICATE-----\n' +
     'MIIEEjCCAvqgAwIBAgIJAM2ZN/+nPi27MA0GCSqGSIb3DQEBCwUAMIGVMQswCQYD\n' +
