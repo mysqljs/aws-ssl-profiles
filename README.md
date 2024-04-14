@@ -1,12 +1,14 @@
 # AWS SSL Profiles
 
-AWS RDS Certificates Bundles
+[**AWS RDS**](https://aws.amazon.com/rds/) Certificates Bundles.
 
 ## Install
 
 ```bash
-npm install aws-ssl-profiles
+npm install --save aws-ssl-profiles
 ```
+
+---
 
 ## Usage
 
@@ -19,3 +21,27 @@ const connection = mysql.createConnection({
   ssl: awsCaBundle,
 });
 ```
+
+---
+
+## License
+
+**AWS SSL Profiles** is under the [**MIT License**](./LICENSE).
+
+---
+
+## Security
+
+Please check the [**SECURITY.md**](./SECURITY.md).
+
+---
+
+## Contributing
+
+Please check the [**CONTRIBUTING.md**](./CONTRIBUTING.md) for instructions.
+
+---
+
+## Acknowledgements
+
+[**Contributors**.](https://github.com/mysqljs/aws-ssl-profiles/graphs/contributors)
