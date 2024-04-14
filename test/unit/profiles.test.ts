@@ -1,5 +1,5 @@
 import { describe, assert } from 'poku';
-import { profiles } from '../../src/index.js';
+import profiles from '../../src/index.js';
 
 describe('Testing Profiles Final Bundle Structure', {
   pad: true,
