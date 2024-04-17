@@ -1,12 +1,16 @@
 {
   "name": "aws-ssl-profiles",
-  "main": "lib/index.js",
-  "description": "AWS RDS certificates bundles.",
   "version": "0.1.0",
+  "main": "lib/index.js",
+  "author": "https://github.com/wellwelwel",
+  "description": "AWS RDS certificates bundles.",
   "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/mysqljs/aws-ssl-profiles"
+  },
+  "bugs": {
+    "url": "https://github.com/mysqljs/aws-ssl-profiles/issues"
   },
   "devDependencies": {
     "@types/node": "^20.12.7",
