@@ -13,9 +13,11 @@
     "sourceMap": false,
     "removeComments": false,
     "listEmittedFiles": true,
-    "outDir": "lib",
     "noUnusedParameters": true,
     "isolatedModules": true,
-    "forceConsistentCasingInFileNames": true
+    "forceConsistentCasingInFileNames": true,
+    "declaration": true,
+    "declarationDir": "lib",
+    "outDir": "lib"
   }
 }
