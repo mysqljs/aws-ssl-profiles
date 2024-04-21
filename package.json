@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "main": "lib/index.js",
   "author": "https://github.com/wellwelwel",
-  "description": "AWS RDS certificates bundles.",
+  "description": "AWS RDS SSL certificates bundles.",
   "license": "MIT",
   "repository": {
     "type": "git",
