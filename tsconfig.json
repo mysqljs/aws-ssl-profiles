@@ -2,8 +2,7 @@
   "include": ["src"],
   "compilerOptions": {
     "target": "ES6",
-    "module": "ES6",
-    "moduleResolution": "Node",
+    "module": "CommonJS",
     "esModuleInterop": true,
     "alwaysStrict": true,
     "noUnusedLocals": false,
