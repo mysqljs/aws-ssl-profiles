@@ -1,8 +1,23 @@
 # AWS SSL Profiles
 
-[**AWS RDS**](https://aws.amazon.com/rds/) Certificates Bundles.
+[**AWS RDS**](https://aws.amazon.com/rds/) **SSL** Certificates Bundles.
 
-## Install
+**Table of Contents**
+
+- [Installation](#installation)
+- [Usage](#usage)
+  - [**mysqljs/mysql**](#mysqljsmysql)
+  - [**MySQL2**](#mysql2)
+  - [**node-postgres**](#node-postgres)
+  - [Custom `ssl` options](#custom-ssl-options)
+- [License](#license)
+- [Security](#security)
+- [Contributing](#contributing)
+- [Acknowledgements](#acknowledgements)
+
+---
+
+## Installation
 
 ```bash
 npm install --save aws-ssl-profiles
