@@ -12,18 +12,38 @@ npm install --save aws-ssl-profiles
 
 ## Usage
 
-### [node-mysql](https://github.com/mysqljs/mysql) and [node-mysql2](https://github.com/sidorares/node-mysql2)
+### [node-mysql](https://github.com/mysqljs/mysql)
 
 ```js
+const mysql = require('mysql');
 const awsCaBundle = require('aws-ssl-profiles');
 
-// mysql or mysql2 connection
+// mysql connection
 const connection = mysql.createConnection({
   //...
   ssl: awsCaBundle,
 });
 
-// mysql or mysql2 connection pool
+// mysql connection pool
+const pool = mysql.createPool({
+  //...
+  ssl: awsCaBundle,
+});
+```
+
+### [node-mysql2](https://github.com/sidorares/node-mysql2)
+
+```js
+const mysql = require('mysql2');
+const awsCaBundle = require('aws-ssl-profiles');
+
+// mysql2 connection
+const connection = mysql.createConnection({
+  //...
+  ssl: awsCaBundle,
+});
+
+// mysql2 connection pool
 const pool = mysql.createPool({
   //...
   ssl: awsCaBundle,
@@ -47,6 +67,32 @@ const pool = new pg.Pool({
   // ...
   ssl: awsCaBundle,
 });
+```
+
+### Custom `ssl` options
+
+Using **AWS SSL Profiles** with custom `ssl` options:
+
+```js
+{
+  // ...
+  ssl: {
+    ...awsCaBundle,
+    rejectUnauthorized: true,
+    // ...
+  }
+}
+```
+
+```js
+{
+  // ...
+  ssl: {
+    ca: awsCaBundle.ca,
+    rejectUnauthorized: true,
+    // ...
+  }
+}
 ```
 
 ---
