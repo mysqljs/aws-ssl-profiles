@@ -34,6 +34,14 @@
   "engines": {
     "node": ">= 6.0.0"
   },
+  "keywords": [
+    "mysql",
+    "mysql2",
+    "aws",
+    "rds",
+    "ssl",
+    "bundle"
+  ],
   "scripts": {
     "build": "npx tsc",
     "lint": "eslint . --ext .js,.ts && prettier --check .",
