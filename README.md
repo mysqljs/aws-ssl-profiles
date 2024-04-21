@@ -56,13 +56,13 @@ const pool = mysql.createPool({
 const pg = require('pg');
 const awsCaBundle = require('aws-ssl-profiles');
 
-// node-postgres connection
+// pg connection
 const client = new pg.Client({
   // ...
   ssl: awsCaBundle,
 });
 
-// node-postgres connection pool
+// pg connection pool
 const pool = new pg.Pool({
   // ...
   ssl: awsCaBundle,
