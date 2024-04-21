@@ -12,7 +12,7 @@ npm install --save aws-ssl-profiles
 
 ## Usage
 
-### [node-mysql](https://github.com/mysqljs/mysql)
+### [mysqljs/mysql](https://github.com/mysqljs/mysql)
 
 ```js
 const mysql = require('mysql');
@@ -31,7 +31,7 @@ const pool = mysql.createPool({
 });
 ```
 
-### [node-mysql2](https://github.com/sidorares/node-mysql2)
+### [MySQL2](https://github.com/sidorares/node-mysql2)
 
 ```js
 const mysql = require('mysql2');
