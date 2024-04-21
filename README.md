@@ -132,4 +132,4 @@ Please check the [**CONTRIBUTING.md**](./CONTRIBUTING.md) for instructions.
 
 ## Acknowledgements
 
-[**Contributors**.](https://github.com/mysqljs/aws-ssl-profiles/graphs/contributors)
+[**Contributors**](https://github.com/mysqljs/aws-ssl-profiles/graphs/contributors).
