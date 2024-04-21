@@ -1,0 +1,56 @@
+name: 'Deploy'
+on:
+  push:
+    branches:
+      - 'main'
+  workflow_dispatch:
+permissions:
+  contents: write
+  pull-requests: write
+jobs:
+  release-please:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    name: Release Please
+    steps:
+      - name: Install release-please
+        uses: google-github-actions/release-please-action@v3
+        id: release
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          release-type: node
+          package-name: aws-ssl-profiles
+          changelog-path: 'CHANGELOG.md'
+
+      - name: Actions - Checkout
+        uses: actions/checkout@v4
+        if: ${{ steps.release.outputs.releases_created }}
+
+      - name: Actions - Setup NodeJS
+        uses: actions/setup-node@v4
+        if: ${{ steps.release.outputs.releases_created }}
+        with:
+          node-version: '20.x'
+          registry-url: 'https://registry.npmjs.org'
+
+      - name: Cache dependencies
+        uses: actions/cache@v4
+        if: ${{ steps.release.outputs.releases_created }}
+        with:
+          path: ~/.npm
+          key: npm-linux-${{ hashFiles('package-lock.json') }}
+          restore-keys: npm-linux-
+
+      - name: Installing Dependencies
+        if: ${{ steps.release.outputs.releases_created }}
+        run: npm ci
+
+      - name: Building Lib
+        if: ${{ steps.release.outputs.releases_created }}
+        run: npm run build
+
+      - name: Publishing Package
+        if: ${{ steps.release.outputs.releases_created }}
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: npm publish
