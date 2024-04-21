@@ -37,9 +37,13 @@
   "keywords": [
     "mysql",
     "mysql2",
+    "pg",
+    "postgres",
     "aws",
     "rds",
     "ssl",
+    "certificates",
+    "ca",
     "bundle"
   ],
   "scripts": {
