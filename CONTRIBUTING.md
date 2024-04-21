@@ -9,11 +9,11 @@
 Contributions are always welcomed. You can help **AWS SSL Profiles** community in various ways.
 Here are our major priorities, listed in order of importance:
 
-- [**Node MySQL**][mysql] and [**MySQL2**][mysql2] API incompatibility fixes
-- Adding tests or improving existing ones
+- [**mysqljs/mysql**][mysql], [**MySQL2**][mysql2] and [**node-postgres**](https://github.com/brianc/node-postgres) API incompatibility fixes
 - Bug Fixes
-- Performance improvements
+- Adding tests or improving existing ones
 - Documentation
+- Performance improvements
 
 ---
 
@@ -33,18 +33,18 @@ Fork this project, create a new branch from `main`, then run `npm ci` to clean i
 
 ### Commits and Pull Request Titles
 
-To ensure a clean commit history pattern, please use the [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/#summary) format.
+To ensure a clean commit history pattern, please use the [**Conventional Commits**](https://www.conventionalcommits.org/en/v1.0.0/#summary) format.
 
 Prefixes that will trigger a new release version:
 
 - `fix:` for patches, e.g., bug fixes that result in a patch version release.
 - `feat:` for new features, e.g., additions that result in a minor version release.
-  - It's better to discuss an API before actually start implementing it. You can open an issue on Github. We can discuss design of API and implementation ideas.
+  - It's better to discuss an API before actually start implementing it. You can open an issue on **Github**. We can discuss design of API and implementation ideas.
 
 Examples:
 
 - `fix: message`
-- `fix(module): message`
+- `fix(scope): message`
 - `docs: message`
 - etc.
 
