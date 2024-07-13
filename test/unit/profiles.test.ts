@@ -12,4 +12,4 @@ assert(
   profiles.ca.every((item) => typeof item === 'string'),
   'Ensure all profiles CA items are strings'
 );
-assert.strictEqual(profiles.ca.length, 115, 'Ensure profiles CA lenght');
+assert.strictEqual(profiles.ca.length, 120, 'Ensure profiles CA length');
