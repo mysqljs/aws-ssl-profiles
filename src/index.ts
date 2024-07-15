@@ -10,8 +10,7 @@ const profiles: Profiles = {
   ca: [...defaults, ...proxies],
 };
 
+exports.default = profiles;
+
 module.exports = profiles;
 module.exports.proxyBundle = proxyBundle;
-
-// ESM
-export default profiles;
