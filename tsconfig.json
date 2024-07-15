@@ -15,6 +15,7 @@
     "forceConsistentCasingInFileNames": true,
     "declaration": true,
     "declarationDir": "lib",
-    "outDir": "lib"
+    "outDir": "lib",
+    "allowSyntheticDefaultImports": true
   }
 }

@@ -14,6 +14,7 @@
   },
   "devDependencies": {
     "@biomejs/biome": "^1.8.3",
+    "@types/node": "^20.14.10",
     "@types/x509.js": "^1.0.3",
     "poku": "^2.0.0",
     "prettier": "^3.3.3",
@@ -41,9 +42,11 @@
   ],
   "scripts": {
     "build": "npx tsc",
+    "postbuild": "cp src/index.d.ts lib/index.d.ts",
     "lint": "npx @biomejs/biome lint && prettier --check .",
     "lint:fix": "npx @biomejs/biome lint --write . && prettier --write .",
+    "pretest": "npm run build",
     "test": "poku --parallel ./test",
-    "test:ci": "npm run lint && npm run build -- --noEmit && npm run test"
+    "test:ci": "npm run lint && npm run test"
   }
 }

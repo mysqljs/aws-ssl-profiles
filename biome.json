@@ -48,16 +48,29 @@
         "rules": {
           "nursery": {
             "useTopLevelRegex": "off"
+          },
+          "correctness": {
+            "noNodejsModules": "off"
           }
         }
       }
     },
     {
-      "include": ["src/index.ts"],
+      "include": ["src/index.ts", "src/index.d.ts"],
       "linter": {
         "rules": {
           "style": {
             "noDefaultExport": "off"
+          }
+        }
+      }
+    },
+    {
+      "include": ["**/**/*.cjs"],
+      "linter": {
+        "rules": {
+          "suspicious": {
+            "noRedundantUseStrict": "off"
           }
         }
       }
