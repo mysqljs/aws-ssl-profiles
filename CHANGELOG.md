@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.1](https://github.com/mysqljs/aws-ssl-profiles/compare/v1.1.0...v1.1.1) (2024-07-15)
+
+
+### Bug Fixes
+
+* resolve imports manually ([#23](https://github.com/mysqljs/aws-ssl-profiles/issues/23)) ([e1b0ae7](https://github.com/mysqljs/aws-ssl-profiles/commit/e1b0ae778f991ba325fbe834f5102c611045ec18))
+
 ## [1.1.0](https://github.com/mysqljs/aws-ssl-profiles/compare/v1.0.0...v1.1.0) (2024-07-15)
 
 
