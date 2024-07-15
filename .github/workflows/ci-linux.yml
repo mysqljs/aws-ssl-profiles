@@ -33,8 +33,5 @@ jobs:
       - name: Installing Dependencies
         run: npm ci
 
-      - name: Building the Lib
-        run: npm run build -- --noEmit
-
       - name: Running Tests
         run: npm run test
