@@ -1,10 +1,7 @@
 import { describe, assert } from 'poku';
 import { defaults } from '../../src/profiles/ca/defaults.js';
 
-describe('Testing default profiles', {
-  pad: true,
-  background: false,
-});
+describe('Testing default profiles');
 
 assert(Array.isArray(defaults), 'Ensure profiles type');
 assert(

@@ -1,19 +1,16 @@
 import { describe, assert } from 'poku';
-import { proxy } from '../../src/profiles/ca/proxy.js';
+import { proxies } from '../../src/profiles/ca/proxies.js';
 
-describe('Testing RDS Proxy profiles', {
-  pad: true,
-  background: false,
-});
+describe('Testing RDS Proxy profiles');
 
-assert(Array.isArray(proxy), 'Ensure profiles type');
+assert(Array.isArray(proxies), 'Ensure profiles type');
 assert(
-  proxy.every((item) => typeof item === 'string'),
+  proxies.every((item) => typeof item === 'string'),
   'Ensure all profiles items are strings'
 );
-assert.strictEqual(proxy.length, 5, 'Ensure profiles length');
+assert.strictEqual(proxies.length, 5, 'Ensure profiles length');
 assert.strictEqual(
-  proxy[0],
+  proxies[0],
   '-----BEGIN CERTIFICATE-----\n' +
     'MIIDQTCCAimgAwIBAgITBmyfz5m/jAo54vB4ikPmljZbyjANBgkqhkiG9w0BAQsF\n' +
     'ADA5MQswCQYDVQQGEwJVUzEPMA0GA1UEChMGQW1hem9uMRkwFwYDVQQDExBBbWF6\n' +

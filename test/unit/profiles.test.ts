@@ -1,10 +1,7 @@
 import { describe, assert } from 'poku';
 import profiles from '../../src/index.js';
 
-describe('Testing Profiles Final Bundle Structure', {
-  pad: true,
-  background: false,
-});
+describe('Testing Profiles Final Bundle Structure');
 
 assert.strictEqual(typeof profiles, 'object', 'Ensure profiles type');
 assert(Array.isArray(profiles.ca), 'Ensure profiles CA type');
