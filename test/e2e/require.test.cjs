@@ -5,6 +5,6 @@ const awsCaBundle = require('../../lib/index.js');
 const { proxyBundle } = require('../../lib/index.js');
 
 test('Testing require (CJS)', () => {
-  strict(typeof awsCaBundle?.ca?.length === 'number');
-  strict(typeof proxyBundle?.ca?.length === 'number');
+  strict(typeof awsCaBundle?.ca?.length === 'number', 'Default require');
+  strict(typeof proxyBundle?.ca?.length === 'number', '"proxyBundle" require');
 });

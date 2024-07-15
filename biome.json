@@ -48,6 +48,9 @@
         "rules": {
           "nursery": {
             "useTopLevelRegex": "off"
+          },
+          "correctness": {
+            "noNodejsModules": "off"
           }
         }
       }
