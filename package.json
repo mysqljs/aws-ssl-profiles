@@ -1,6 +1,6 @@
 {
   "name": "aws-ssl-profiles",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "main": "lib/index.js",
   "author": "https://github.com/wellwelwel",
   "description": "AWS RDS SSL certificates bundles.",
