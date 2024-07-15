@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.1.0](https://github.com/mysqljs/aws-ssl-profiles/compare/v1.0.0...v1.1.0) (2024-07-15)
+
+
+### Features
+
+* add RDS Proxy CA certificates ([#19](https://github.com/mysqljs/aws-ssl-profiles/issues/19)) ([335147b](https://github.com/mysqljs/aws-ssl-profiles/commit/335147bfaa6829910f728958a754c0aa1957b0ff))
+* expose custom bundles ([#21](https://github.com/mysqljs/aws-ssl-profiles/issues/21)) ([dd6111d](https://github.com/mysqljs/aws-ssl-profiles/commit/dd6111d7b7fc33e7ab4e145a1c99aa4c90bbe86c))
+
 ## 1.0.0 (2024-04-21)
 
 
