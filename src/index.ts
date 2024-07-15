@@ -10,4 +10,6 @@ const profiles: Profiles = {
   ca: [...defaults, ...proxies],
 };
 
-export default profiles;
+module.exports = profiles;
+module.exports.proxyBundle = proxyBundle;
+module.exports.default = profiles;

@@ -14,6 +14,7 @@
   },
   "devDependencies": {
     "@biomejs/biome": "^1.8.3",
+    "@types/node": "^20.14.10",
     "@types/x509.js": "^1.0.3",
     "poku": "^2.0.0",
     "prettier": "^3.3.3",
