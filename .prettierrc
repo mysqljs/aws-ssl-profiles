@@ -13,5 +13,14 @@
   "htmlWhitespaceSensitivity": "css",
   "endOfLine": "auto",
   "embeddedLanguageFormatting": "auto",
-  "singleAttributePerLine": false
+  "singleAttributePerLine": false,
+  "overrides": [
+    {
+      "files": ["src/**/*.d.ts"],
+      "options": {
+        "singleQuote": false,
+        "tabWidth": 4
+      }
+    }
+  ]
 }
