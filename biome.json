@@ -1,0 +1,66 @@
+{
+  "$schema": "https://biomejs.dev/schemas/1.8.2/schema.json",
+  "files": {
+    "include": ["**/**"],
+    "ignore": ["node_modules", "lib"]
+  },
+  "linter": {
+    "enabled": true,
+    "rules": {
+      "all": true,
+      "complexity": {
+        "all": true,
+        "noExcessiveCognitiveComplexity": "off"
+      },
+      "a11y": {
+        "all": true
+      },
+      "correctness": {
+        "all": true
+      },
+      "nursery": {
+        "all": true,
+        "useImportExtensions": "error",
+        "useImportRestrictions": "off"
+      },
+      "performance": {
+        "all": true
+      },
+      "security": {
+        "all": true
+      },
+      "suspicious": {
+        "all": true,
+        "noConsoleLog": "error"
+      },
+      "style": {
+        "all": true,
+        "noDefaultExport": "error",
+        "noNonNullAssertion": "off",
+        "useNamingConvention": "off"
+      }
+    }
+  },
+  "overrides": [
+    {
+      "include": ["test"],
+      "linter": {
+        "rules": {
+          "nursery": {
+            "useTopLevelRegex": "off"
+          }
+        }
+      }
+    },
+    {
+      "include": ["src/index.ts"],
+      "linter": {
+        "rules": {
+          "style": {
+            "noDefaultExport": "off"
+          }
+        }
+      }
+    }
+  ]
+}

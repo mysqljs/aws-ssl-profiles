@@ -10,5 +10,4 @@ const profiles: Profiles = {
   ca: [...defaults, ...proxies],
 };
 
-// eslint-disable-next-line import/no-default-export
 export default profiles;
