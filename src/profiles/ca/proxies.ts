@@ -1,4 +1,4 @@
-import { CA } from '../../@types/profiles.js';
+import type { CA } from '../../@types/profiles.js';
 
 /**
  * CA Certificates for **Amazon RDS Proxy** (2024)
@@ -6,7 +6,7 @@ import { CA } from '../../@types/profiles.js';
  * - https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/rds-proxy.howitworks.html#rds-proxy-security.tls
  * - https://www.amazontrust.com/repository/
  */
-export const proxy: CA = [
+export const proxies: CA = [
   '-----BEGIN CERTIFICATE-----\n' +
     'MIIDQTCCAimgAwIBAgITBmyfz5m/jAo54vB4ikPmljZbyjANBgkqhkiG9w0BAQsF\n' +
     'ADA5MQswCQYDVQQGEwJVUzEPMA0GA1UEChMGQW1hem9uMRkwFwYDVQQDExBBbWF6\n' +

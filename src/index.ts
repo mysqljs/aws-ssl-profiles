@@ -1,9 +1,13 @@
-import { Profiles } from './@types/profiles.js';
+import type { Profiles } from './@types/profiles.js';
 import { defaults } from './profiles/ca/defaults.js';
-import { proxy } from './profiles/ca/proxy.js';
+import { proxies } from './profiles/ca/proxies.js';
+
+export const proxyBundle: Profiles = {
+  ca: proxies,
+};
 
 const profiles: Profiles = {
-  ca: [...defaults, ...proxy],
+  ca: [...defaults, ...proxies],
 };
 
 // eslint-disable-next-line import/no-default-export

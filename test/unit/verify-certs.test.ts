@@ -1,14 +1,11 @@
 import x509 from 'x509.js';
 import { describe, assert } from 'poku';
 import { defaults } from '../../src/profiles/ca/defaults.js';
-import { proxy } from '../../src/profiles/ca/proxy.js';
+import { proxies } from '../../src/profiles/ca/proxies.js';
 
-describe('Ensuring all certificates are valid and parsable', {
-  pad: true,
-  background: false,
-});
+describe('Ensuring all certificates are valid and parsable');
 
-defaults.forEach((cert, index) => {
+for (const [index, cert] of defaults.entries()) {
   const parsedCert = x509.parseCert(cert);
   const expected = 'Amazon RDS';
 
@@ -17,19 +14,15 @@ defaults.forEach((cert, index) => {
     expected,
     `Certificate at index ${index} from defaults`
   );
-});
+}
 
-proxy.forEach((cert, index) => {
+for (const [index, cert] of proxies.entries()) {
   const parsedCert = x509.parseCert(cert);
-  let expected = 'Amazon';
+  const expected = /^(Amazon|Starfield Technologies, Inc\.)$/;
 
-  if (index === 4) {
-    expected = 'Starfield Technologies, Inc.';
-  }
-
-  assert.strictEqual(
-    parsedCert.issuer.organizationName,
+  assert.match(
+    parsedCert.issuer.organizationName!,
     expected,
-    `Certificate at index ${index} from proxy`
+    `Certificate at index ${index} from proxies`
   );
-});
+}

@@ -1,4 +1,4 @@
-import { CA } from '../../@types/profiles.js';
+import type { CA } from '../../@types/profiles.js';
 
 /**
  * CA Certificates for **Amazon RDS** (2024)

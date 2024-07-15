@@ -110,6 +110,17 @@ Using **AWS SSL Profiles** with custom `ssl` options:
 }
 ```
 
+### Custom bundles
+
+```js
+const { proxyBundle } = require('aws-ssl-profiles');
+
+{
+  // ...
+  ssl: proxyBundle,
+}
+```
+
 ---
 
 ## License
