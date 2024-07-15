@@ -10,7 +10,6 @@ const profiles: Profiles = {
   ca: [...defaults, ...proxies],
 };
 
-// CJS
 module.exports = profiles;
 module.exports.proxyBundle = proxyBundle;
 
