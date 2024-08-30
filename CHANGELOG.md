@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.2](https://github.com/mysqljs/aws-ssl-profiles/compare/v1.1.1...v1.1.2) (2024-08-30)
+
+
+### Bug Fixes
+
+* reintroduce `default` property to improve CJS and ESM interoperability ([#26](https://github.com/mysqljs/aws-ssl-profiles/issues/26)) ([567c5a1](https://github.com/mysqljs/aws-ssl-profiles/commit/567c5a10e0173afbd826821ec188da000a598e6e))
+
 ## [1.1.1](https://github.com/mysqljs/aws-ssl-profiles/compare/v1.1.0...v1.1.1) (2024-07-15)
 
 
