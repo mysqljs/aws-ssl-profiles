@@ -7,7 +7,7 @@ test('Testing default profiles', () => {
     defaults.every((item) => typeof item === 'string'),
     'Ensure all profiles items are strings'
   );
-  strict.strictEqual(defaults.length, 115, 'Ensure profiles lenght');
+  strict.strictEqual(defaults.length, 130, 'Ensure profiles lenght');
   strict.strictEqual(
     defaults[0],
     '-----BEGIN CERTIFICATE-----\n' +
