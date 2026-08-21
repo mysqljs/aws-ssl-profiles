@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.0](https://github.com/mysqljs/aws-ssl-profiles/compare/v1.1.2...v1.2.0) (2026-08-21)
+
+
+### Features
+
+* add certs for missing commercial regions ([#33](https://github.com/mysqljs/aws-ssl-profiles/issues/33)) ([64064a4](https://github.com/mysqljs/aws-ssl-profiles/commit/64064a4c2bfd73b3caff3df800b23ca5616312b0))
+
 ## [1.1.2](https://github.com/mysqljs/aws-ssl-profiles/compare/v1.1.1...v1.1.2) (2024-08-30)
 
 
