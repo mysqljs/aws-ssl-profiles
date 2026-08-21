@@ -8,5 +8,5 @@ test('Testing Profiles Final Bundle Structure', () => {
     profiles.ca.every((item) => typeof item === 'string'),
     'Ensure all profiles CA items are strings'
   );
-  strict.strictEqual(profiles.ca.length, 120, 'Ensure profiles CA length');
+  strict.strictEqual(profiles.ca.length, 135, 'Ensure profiles CA length');
 });
